@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/Images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: max(1200px, 126vw);
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 75vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 145px;
+    position: relative;
+    z-index: 10;
+    margin-top: 1.5rem;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 62px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :first-child {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.line {
+    height: 7px;
+    background-color: rgb(55, 55, 55);
+}
+
+.btn {
+    padding: 7px 15px;
+    margin: 0.8rem;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    background-color: rgba(243, 241, 241, 0.036);
+    border: 1px solid rgba(248, 244, 244, 0.4);
+    cursor: pointer;
+
+}
+.button>:first-child{
+    padding: 7px 40px;
+}
+.button{
+    margin-top: 1.5rem;
+
+}
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 12px 48px;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    border: none;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+
+
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+    border: none;
+
+}
+
+.main input{
+    padding: 14px 140px 14px 16px;
+    font-size: 1.1rem;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.6);
+    color: white;
+    border: 1px solid rgba(248, 244, 244, 0.4);
+    
+}
+.hero-buttons{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    height: 83vh;
+
+}
+.secImg{
+    position: relative;
+}
+.secImg img{
+    width: 40vw;
+    position: relative;
+    z-index: 10;
+}
+.secImg video{
+    position: absolute;
+    top: 71px;
+    right: 51px;
+}
+
+.first > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+
+}
+.first > div :first-child{
+    font-size: 48px;
+    font-weight: bolder;
+}
+.first > div :nth-child(2){
+    font-size: 24px;
+}
+
+.feq{
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+.feq h2{
+    text-align: center;
+    font-size: 3rem;
+    margin: 30px 0;
+}
+.feqbox{
+    display: flex;
+  background-color: rgb(55, 55, 55);
+  padding: 23px;
+  font-size: 25px;
+  max-width: 74vw;
+  margin: 9px auto;
+  cursor: pointer;
+}
+.feqbox:hover{
+    background-color: rgba(116, 115, 115, 0.638);
+    transition: all 0.2s ease-in;
+}
+
+
+footer{
+    padding: 34px;
+    max-width: 70vw;
+    margin: auto;
+    color: white
+}
+.questions{
+    padding: 34px 0;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.footer a{
+    color: white;
+    font-size: 14px;
+}

@@ -98,23 +98,31 @@ nav button {
     cursor: pointer;
 
 }
-.button>:first-child{
-    padding: 7px 40px;
+
+.button>:first-child {
+    padding: 7px 16px;
 }
-.button{
+
+.button {
     margin-top: 1.5rem;
 
 }
+
 .btn-red {
-    background-color: red;
+    background-color: rgb(255, 0, 0);
     color: white;
-    padding: 12px 48px;
+    padding: 12px 26px;
     font-size: 1.4rem;
     border-radius: 4px;
     border: none;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
+.inside-button i {
+    color: blue;
 }
 
 .btn-red-sm {
@@ -124,7 +132,7 @@ nav button {
 
 }
 
-.main input{
+.main input {
     padding: 14px 140px 14px 16px;
     font-size: 1.1rem;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
@@ -132,16 +140,17 @@ nav button {
     background-color: rgba(23, 23, 23, 0.6);
     color: white;
     border: 1px solid rgba(248, 244, 244, 0.4);
-    
+
 }
-.hero-buttons{
+
+.hero-buttons {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     align-items: center;
 }
 
 
-.first{
+.first {
     display: flex;
     justify-content: center;
     max-width: 80vw;
@@ -149,83 +158,207 @@ nav button {
     color: white;
     align-items: center;
     height: 83vh;
+    /* flex-wrap: wrap; */
 
 }
-.secImg{
+
+.secImg {
     position: relative;
+    display: flex;
 }
-.secImg img{
+
+.secImg img {
     width: 40vw;
     position: relative;
     z-index: 10;
 }
-.secImg video{
+
+.secImg video {
     position: absolute;
     top: 71px;
     right: 51px;
 }
 
-.first > div{
+
+.first>div {
     display: flex;
     flex-direction: column;
     gap: 10px;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
 
 }
-.first > div :first-child{
+
+.first>div :first-child {
     font-size: 48px;
     font-weight: bolder;
 }
-.first > div :nth-child(2){
+
+.first>div :nth-child(2) {
     font-size: 24px;
 }
 
-.feq{
+.feq {
     background-color: black;
     color: white;
     padding: 34px;
 }
-.feq h2{
+
+.feq h2 {
     text-align: center;
     font-size: 3rem;
     margin: 30px 0;
 }
-.feqbox{
+
+.feqbox {
     display: flex;
-  background-color: rgb(55, 55, 55);
-  padding: 23px;
-  font-size: 25px;
-  max-width: 74vw;
-  margin: 9px auto;
-  cursor: pointer;
+    background-color: rgb(55, 55, 55);
+    padding: 23px;
+    font-size: 25px;
+    max-width: 74vw;
+    margin: 9px auto;
+    cursor: pointer;
+    justify-content: space-between;
 }
-.feqbox:hover{
+
+.feqbox i {
+    font-size: 23px;
+}
+
+.feqbox:hover {
     background-color: rgba(116, 115, 115, 0.638);
     transition: all 0.2s ease-in;
 }
 
 
-footer{
+footer {
     padding: 34px;
     max-width: 70vw;
     margin: auto;
-    color: white
+    color: rgb(157, 155, 155);
 }
-.questions{
+
+.questions {
     padding: 34px 0;
 }
-.footer{
+
+.footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    color: white;
-    
+    color: rgb(157, 155, 155);
+
 }
-.footer-item{
+
+.footer-item {
     display: flex;
     flex-direction: column;
     gap: 23px;
 }
-.footer a{
-    color: white;
+
+.footer a {
+    color: rgb(157, 155, 155);
     font-size: 14px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .main{
+        height: 65vh;
+
+    }
+    .hero> :first-child{
+        margin-top: 10px;
+        
+    }
+    .hero> :nth-child(2){
+        font-size: 1.2rem;
+        max-width: 70vw;
+    }
+    .hero> :nth-child(3){
+        font-size: 1.2rem;
+        max-width: 60vw;
+    }
+    .hero-buttons{
+        flex-direction: column;
+    }
+
+    .main input {
+        padding: 12px 4px 12px 16px;
+    }
+    .btn-red{
+        padding: 12px 21px;
+        font-size: 1.2rem;
+    }
+    nav {
+        max-width: 85vw;
+        margin: auto;
+        justify-content: space-evenly;
+        
+    }
+    nav img { 
+        width: 85px; 
+    }
+    nav button{
+        width: 20vw;
+        height: 3.5vh;
+    }
+    .button {
+        width: 50vw;
+        display: flex;
+    }
+    .button :first-child{
+        font-size: 0.4rem;
+        padding-left: 3px;
+    }
+    .btn-red-sm{
+        margin: auto -6px;
+        width: 35vw;
+        height: 3.5vh;
+        font-size: 0.8rem;
+    }
+
+
+    .hero> :first-child{
+        font-size: 2rem;
+    }
+
+    .first {
+        flex-wrap: wrap;
+        height: 55vh;
+    }
+
+    .secImg {
+        /* align-self: center; */
+        width: 80vw;
+        height: 30vh;
+        /* position: relative; */
+    }
+
+    .secImg img {
+        width: 100%;
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .secImg video {
+        width: 70vw;
+        position: absolute;
+        top: 40px;
+        left: 25px;
+    }
+
+    .first>div :first-child {
+        font-size: 33px;
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .first>div :nth-child(2) {
+        font-size: 17px;
+        text-align: center;
+    }
+    .second :nth-child(2)  {
+        /* font-size: 33px; */
+        margin-bottom: 32px;
+    }
 }

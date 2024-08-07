@@ -282,7 +282,7 @@ footer {
     }
 
     .main input {
-        padding: 12px 45px 12px 16px;
+        padding: 10px 60px 10px 16px;
     }
     .btn-red{
         padding: 12px 21px;
@@ -351,14 +351,19 @@ footer {
         font-weight: bolder;
         text-align: center;
         margin-top: 32px;
+        /* z-index: 1; */
     }
 
     .first>div :nth-child(2) {
         font-size: 17px;
         text-align: center;
+        /* z-index: 1; */
     }
     .second :nth-child(2)  {
         /* font-size: 33px; */
         margin-bottom: 32px;
+    }
+    .first>div{
+        z-index: 1;
     }
 }
